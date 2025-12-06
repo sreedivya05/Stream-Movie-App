@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Maamannan",
+    "poster": "posters/Maamannan.webp",
+    "theatre": "NA",
+    "ott": "Netflix",
+    "rating": "7.2",
+    "category": "family",
+    "description": "A powerful political drama about caste, power, and justice."
+  },
+
+  {
+    "title": "Hi Nanna",
+    "poster": "posters/Hi Nanna.jpg",
+    "theatre": "NA",
+    "ott": "Netflix",
+    "rating": "8.0",
+    "category": "romance",
+    "description": "An emotional romantic drama exploring fatherhood and love."
+  },
+
+  {
+    "title": "Salaar",
+    "poster": "posters/Salaar.jpg",
+    "theatre": "PVR",
+    "ott": "Prime Video",
+    "rating": "7.9",
+    "category": "action",
+    "description": "A high-octane gangster thriller set in a dystopian world."
+  },
+
+  {
+    "title": "Devara",
+    "poster": "posters/Devara.webp",
+    "theatre": "PVR",
+    "ott": "Hotstar",
+    "rating": "8.1",
+    "category": "action",
+    "description": "An intense drama filled with revenge, emotion, and stunning visuals."
+  },
+
+  {
+    "title": "Pushpa 2",
+    "poster": "posters/Pushpa 2.jpg",
+    "theatre": "Inox",
+    "ott": "NA",
+    "rating": "8.7",
+    "category": "thriller",
+    "description": "The continuation of Pushpa's rise in the red sandalwood smuggling world."
+  },
+
+  {
+    "title": "Mirzapur",
+    "poster": "posters/Mirzapur.jpg",
+    "theatre": "NA",
+    "ott": "Prime Video",
+    "rating": "8.5",
+    "category": "thriller",
+    "description": "A gritty crime thriller set in the lawless town of Mirzapur."
+  }
+]

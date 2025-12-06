@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Trending Movies</title>
+
+<style>
+body {
+  background: url("https://static.vecteezy.com/system/resources/previews/001/984/880/original/abstract-colorful-geometric-overlapping-background-and-texture-free-vector.jpg") center/cover no-repeat fixed;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 2px 2px black;
+}
+
+.category {
+  margin: 40px 0 20px 20px;
+  font-size: 28px;
+  text-shadow: 2px 2px black;
+}
+
+.poster {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+.row {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.row img {
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+</style>
+
+<script>
+function change() {
+  let ri = [
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQsz5h5Lqk0YvKiwocqZ4aRNukcLkgALnWF7TikfxzT52o7ilFqGIZAqWFWeBSy-w9D4A&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM09zUBsJz7HZqZUlpJAMftR1BZ9OMOaTPUA&usqp=CAU",
+    "https://i0.wp.com/www.socialnews.xyz/wp-content/uploads/2016/07/06/100-Days-of-Love-Movie-Poster.jpg?w=773&h=1344",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyGe6i3JRizdvPX8R9FIZN6MrHyM0g_EHSIg&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQERIf4RB0dcNrH_rHg2ZCUIVADRPb46VJF7Q&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8IWDcdkMiAnO85f3fzrpIQhtSTTENSNnBdw&usqp=CAU"
+  ];
+
+  let random = Math.floor(Math.random() * ri.length);
+  document.getElementById("result").src = ri[random];
+}
+</script>
+
+</head>
+
+<body>
+
+<h1>Trending Movies</h1>
+
+<img id="result" class="poster" 
+     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStBc4oMlvunDMzvpdIhtfxy0sDFRavLU2c1g&usqp=CAU"
+     width="500" height="300"
+     onmouseover="change()" />
+
+<h2 class="category">ACTION</h2>
+<div class="row">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0jlqXAj9436rwUbmcx0d-jWckezQSqNVG5Q&usqp=CAU" width="300">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDzQ0VbrEEkyAe7WJyLUvKOKG-Y9HnDHXSRg&usqp=CAU" width="300">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ltJ46ci--KHDy0ynhkdT3wotAd-bqeWg5g&usqp=CAU" width="300">
+  <img src="https://wbdstbt.in/wp-content/uploads/2022/08/KGF-Chapter-3.jpg" width="300">
+</div>
+
+<h2 class="category">THRILLER</h2>
+<div class="row">
+  <img src="https://india.postsen.com/content/uploads/2022/12/01/e08dc87774.jpg" width="300">
+  <img src="https://www.thetelugufilmnagar.com/wp-content/uploads/2022/11/Masooda.webp" width="300">
+  <img src="https://static.toiimg.com/photo/69276105.cms" width="300">
+  <img src="https://image3.mouthshut.com/images/imagesp/925104088s.jpg" width="300">
+</div>
+
+<h2 class="category">FAMILY</h2>
+<div class="row">
+  <img src="https://www.yashrajfilms.com/images/default-source/Movies/K3G/kabhi-khushi-kabhie-gham_767x430.jpg" width="300">
+  <img src="https://www.telugu360.com/wp-content/uploads/2017/03/Shatamanam-Bhavati-worldwide-Closing-Collections.jpg" width="300">
+  <img src="https://st1.bollywoodlife.com/wp-content/uploads/2018/05/Mahanati-poster.jpg" width="300">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzjhk-2qD817aKvA195_H6glAUXbvRGyWBXg&usqp=CAU" width="300">
+</div>
+
+</body>
+</html>

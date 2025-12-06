@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign up — Xtream</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="brand">Xtream</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="movies.html">Trending</a>
+      <a href="about.html">About</a>
+      <a href="signup.html">Sign up</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Create account</h2>
+
+    <form name="signupForm" action="success.html" onsubmit="return validateSignup(this)" class="form-card">
+
+      <label>
+        User name
+        <input type="text" name="un" required />
+      </label>
+
+      <label>
+        Email Id
+        <input type="email" name="em" required />
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="pw" required minlength="6" />
+      </label>
+
+      <label>
+        Retype password
+        <input type="password" name="rpw" required minlength="6" />
+      </label>
+
+      <label>
+        Mobile Number
+        <input type="tel" name="mn" pattern="[0-9]{7,15}" />
+      </label>
+
+      <div>
+        <button type="submit" class="button">Create account</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

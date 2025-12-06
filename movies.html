@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Xtream — Trending Movies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="brand">Xtream</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="movies.html">Trending</a>
+      <a href="about.html">About</a>
+      <a href="signup.html">Sign up</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="trending">
+      <h2>Trending — Random Poster</h2>
+      <div class="poster" id="randomPoster"></div>
+      <p>Hover the poster to change it.</p>
+    </section>
+
+    <section class="movie-list">
+      <h2>Movie list & ratings</h2>
+
+      <div class="search-filter">
+        <input
+          id="searchInput"
+          class="search-input"
+          type="text"
+          placeholder="Search by title, theatre or OTT..."
+        />
+        <div class="filter-buttons">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="action">Action</button>
+          <button class="filter-button" data-filter="thriller">Thriller</button>
+          <button class="filter-button" data-filter="family">Family</button>
+          <button class="filter-button" data-filter="romance">Romance</button>
+          <button class="filter-button" data-filter="top-rated">⭐ Top Rated</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table id="moviesTable">
+          <thead>
+            <tr>
+              <th>Poster</th>
+              <th>Movie</th>
+              <th>Theatre</th>
+              <th>OTT</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- rows added via JS -->
+          </tbody>
+        </table>
+      </div>
+      <p class="hint">Tip: Click a movie row to see full details.</p>
+    </section>
+  </main>
+
+  <!-- Netflix-style modal -->
+  <div id="movieModal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="modal-content">
+        <div class="modal-poster-wrap">
+          <img id="modalPoster" class="modal-poster" src="" alt="Poster" />
+        </div>
+        <div class="modal-info">
+          <h3 id="modalTitle"></h3>
+          <p class="modal-meta">
+            <span id="modalYear"></span> ·
+            <span id="modalCategory"></span> ·
+            ⭐ <span id="modalRating"></span>/10
+          </p>
+          <p id="modalDescription" class="modal-description"></p>
+          <p class="modal-availability">
+            Theatre: <span id="modalTheatre"></span><br />
+            OTT: <span id="modalOtt"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <small>Movie dataset from project files.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

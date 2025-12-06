@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Xtream Menu</title>
+
+<style>
+* {
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: url("https://t4.ftcdn.net/jpg/01/59/33/03/240_F_159330343_LXJNQkkFaA6tRoYIqX4VWjTVA8ISOG8a.jpg") center/cover no-repeat fixed;
+}
+
+/* Heading */
+h1 {
+  text-shadow: 2px 2px black;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Navbar */
+#navbar, #navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#navbar {
+  background-color: #666;
+  height: 30px;
+  padding-left: 25px;
+  min-width: 470px;
+}
+
+#navbar li {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+
+#navbar li a {
+  display: block;
+  width: 110px;
+  padding: 6px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+#navbar li:hover {
+  background-color: #f90;
+}
+
+/* Dropdown */
+#navbar ul {
+  display: none;
+  background-color: #f90;
+  position: absolute;
+  top: 100%;
+}
+
+#navbar li:hover ul {
+  display: block;
+}
+
+#navbar ul li {
+  float: none;
+}
+
+#navbar ul li:hover {
+  background-color: #666;
+}
+
+/* Marquee */
+marquee {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ffecec;
+}
+</style>
+</head>
+
+<body>
+<h1>Xtream</h1>
+
+<marquee>Are you interested in movies?</marquee>
+
+<br><br>
+
+<ul id="navbar">
+  <li><a href="body.html" target="2">Home</a></li>
+  <li><a href="signup.html" target="2">Sign Up</a></li>
+  <li><a href="watch.html" target="2">Trending</a></li>
+  <li><a href="stream.html" target="2">Streaming</a></li>
+</ul>
+
+</body>
+</html>

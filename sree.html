@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<body>
+
+<form id="form1">
+  <label id="l1">This is Label 1</label><br>
+  <label id="l2">This is Label 2</label><br>
+</form>
+
+<script>
+let newLabel = document.createElement("label");
+newLabel.textContent = "This is new.";
+
+// insert before label 1
+let form = document.getElementById("form1");
+let label1 = document.getElementById("l1");
+
+form.insertBefore(newLabel, label1);
+
+// remove label 1
+label1.remove();
+</script>
+
+</body>
+</html>

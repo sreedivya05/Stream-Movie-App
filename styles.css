@@ -1,0 +1,399 @@
+/* GLOBAL RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: url("https://img.freepik.com/free-vector/cinema-background-design_1284-12716.jpg")
+    center/cover fixed;
+  color: #fff;
+}
+
+/* HEADER */
+.header {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid crimson;
+}
+
+.brand {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffb3c6;
+  letter-spacing: 1px;
+}
+
+/* NAVBAR */
+.nav a {
+  margin-left: 20px;
+  color: #eee;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.nav a:hover {
+  color: #ff6f91;
+  text-shadow: 0 0 8px #ff6f91;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+  backdrop-filter: blur(5px);
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #ff6f3c;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.25s ease;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #ff3b3b;
+  transform: scale(1.08);
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(15, 15, 15, 0.75);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.hero-text h2 {
+  font-size: 30px;
+  color: #87cefa;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 18px;
+}
+
+/* FEATURES SECTION */
+.features {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.features article {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid crimson;
+}
+
+.features h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #ffb3c6;
+}
+
+/* TRENDING POSTER */
+.trending {
+  margin-bottom: 40px;
+}
+
+.trending h2 {
+  font-size: 28px;
+  color: #add8e6;
+  margin-bottom: 15px;
+}
+
+.poster {
+  width: 420px;
+  height: 260px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #ff4d6d;
+  box-shadow: 0 0 25px rgba(255, 0, 80, 0.5);
+  transition: 0.25s;
+}
+
+.poster:hover {
+  transform: scale(1.05);
+}
+
+/* MOVIE TABLE */
+.movie-list h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #ffdcdc;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background: rgba(255, 0, 80, 0.8);
+}
+
+thead th {
+  padding: 14px;
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+}
+
+tbody td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 17px;
+}
+
+/* SUCCESS PAGE */
+.success-card {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  text-align: center;
+  width: 350px;
+  margin: 70px auto;
+  border-radius: 15px;
+  border: 2px solid #ff4d6d;
+  box-shadow: 0 0 20px rgba(255, 0, 80, 0.5);
+}
+
+.success-card h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #ffb3c6;
+}
+
+.success-card p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* SIGN-UP FORM */
+.form-card {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 25px;
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 15px;
+  border: 2px solid crimson;
+}
+
+.form-card label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+/* ABOUT PAGE */
+.about-page {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 30px;
+  border-radius: 15px;
+  border: 2px solid crimson;
+}
+
+.about-page h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #ff9db5;
+}
+
+.about-page p {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  color: #ddd;
+  background: rgba(0, 0, 0, 0.65);
+  border-top: 2px solid crimson;
+}
+
+/* SEARCH + FILTERS */
+.search-filter {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-button {
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid #ff6f91;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffdcdc;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-button.active {
+  background: #ff6f91;
+  color: #000;
+}
+
+/* POSTER THUMBNAIL */
+.poster-thumb {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* NETFLIX MODAL */
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+}
+
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 800px;
+  margin: 60px auto;
+  background: rgba(0, 0, 0, 0.95);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.modal-poster {
+  width: 220px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.modal-info h3 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.modal-meta {
+  font-size: 15px;
+  color: #ffdcdc;
+  margin-bottom: 12px;
+}
+
+.modal-description {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.modal-availability {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* MOVIE ROW HOVER */
+.movie-row:hover {
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .modal-dialog {
+    margin: 40px 10px;
+  }
+  
+  .modal-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .modal-poster {
+    width: 180px;
+  }
+}
